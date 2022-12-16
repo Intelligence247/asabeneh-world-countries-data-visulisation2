@@ -9,10 +9,12 @@
 - Css
 - JavaScript
 ## Preview here
-[Go Live]()
+[Go Live](https://cheerful-semolina-2ee3ad.netlify.app)
 
-![screenshot]()
-![screenshot]()
+![screenshot](./media/sketch.png)
+![screenshot](./media/sketch2.png)
+![screenshot](./media/sketch3.png)
+
 ## Contact
 If you want to contact me you can reach me at
 - https://github.com/Intelligence247 or
