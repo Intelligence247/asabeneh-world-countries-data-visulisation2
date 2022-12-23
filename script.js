@@ -280,13 +280,13 @@ anyWord.addEventListener('click', e => {
             p.textContent = countries2[i]
             length.push(countries2[i])
 
-            describeKey.textContent = 'Countries starting with'
+            describeKey.textContent = 'Countries containing'
             span1.textContent = input.value
             span2.textContent = 'are'
             span3.textContent = length.length
 
         } else if (input.value.length == 0 || input.value == null || input.value == '') {
-            p.textContent = ''
+            p.textContent = `No countries contains${input.value}`
             p.style.display = 'none'
         } else {
             p.textContent = ''
@@ -308,12 +308,15 @@ anyWord.addEventListener('click', e => {
 const arrow = document.querySelector('.arrow')
 arrow.style.cursor = 'pointer'
 const imgarr = document.querySelector('#downup')
-let reversedarr = countries2.reverse()
+imgarr.src = './media/arrow-down-fill.png'
 
-// imgarr.src = ''
+let reversedarr = countries2.reverse()
 
 arrow.addEventListener('click', (e) => {
     section.innerHTML = ''
+    let x = e
+    console.log(e)
+    console.log(e.isTrusted)
     for (const c of reversedarr) {
         imgarr.src = './media/arrow-up-fill.png'
         p = document.createElement('p')
